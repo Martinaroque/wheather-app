@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Red+Hat+Mono:ital,wght@1,300&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body class="geral">
+    <h1>
+        Whitch city are you?
+    </h1>
+    <br />
+    <form id="search-form">
+        <input type="text" placeholder="Text one city" autocomplete="off" autofocus="on" id="search-text" />
+        <input type="submit" value="search" class="btn btn-primary" />
+
+
+    </form>
+    <button id="location">Current</button>
+
+    <div class=" data">
+
+    </div>
+
+    <div class="info">
+        <small> Today: <b><span class="date"></span></b> <b><span class="time"></span></b></small>
+    </div>
+    </div>
+    <br />
+    <UL>
+
+        <li>Humidity: <span id="humidity">20</span>%</li>
+        <li>Real Fee: <span id="real">9</span>ºC</li>
+    </UL>
+    <br />
+    <div class="main">
+        <img class="today-chuva" src="imagens/chuva.PNG" alt="">
+        <div class="today">
+            <h5>
+                Lisbon
+            </h5>
+            <p>
+
+                <span class="nowTemperature" id="temperature-now">31</span><span>º</span>
+                <span id="all-temperature">
+                    <span>C</span>
+
+
+
+                </span>
+            </p>
+
+            <p class="min">Min:10ºC</p>
+            <p>Max:16ºC</p>
+        </div>
+    </div>
+    <div class="choose-day">
+        <form>
+            <input type="date">
+        </form>
+    </div>
+    <br />
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card" width=30>
+                    <img src="imagens/chuva.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Wednesday</h5>
+                        <div class="temperature">
+                            <p class="Wednesday">Min:10ºC </p>
+                            <p class="Wednesday_1">Max:16ºC</p>
+                        </div>
+                        <a href="#" class="btn btn-primary">More details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" width=40>
+                    <img src="imagens/nublado.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Thursday</h5>
+                        <div class="temperature">
+                            <p class="Thursday">Min:11ºC </p>
+                            <p class="Thursday_1">Max:15ºC</p>
+                        </div>
+                        <a href="#" class="btn btn-primary">More details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" width=30>
+                    <img src="imagens/Sol.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Friday</h5>
+                        <div class="temperature">
+                            <p class="Friday">Min:14ºC </p>
+                            <p class="Friday_1">Max:19ºC</p>
+                        </div>
+                        <a href="#" class="btn btn-primary">More details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" width=40>
+                    <img src="imagens/Sol.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Saturday</h5>
+                        <div class="temperature">
+                            <p class="Saturday">Min:16ºC </p>
+                            <p class="Saturday_1">Max:24ºC</p>
+                        </div>
+                        <a href="#" class="btn btn-primary">More details</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card" width=30>
+                    <img src="imagens/Sol.PNG" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Sunday</h5>
+                        <div class="temperature">
+                            <p class="Sunday">Min:17ºC </p>
+                            <p class="Sunday_1">Max:25ºC</p>
+                        </div>
+                        <a href="#" class="btn btn-primary">More details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="java/hora.js"></script>
+</body>
+
+</html>
