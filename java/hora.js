@@ -37,9 +37,10 @@ let searchCities = document.querySelector("#search-form");
 searchCities.addEventListener("submit", search);
 
 function showTemperature(response) {
+    celcius = response.data.main.temp;
   let h5 = document.querySelector("h5");
   h5.innerHTML = response.data.name;
-  let temperature = Math.round(response.data.main.temp);
+  let temperature = Math.round(celcius);
   let hum = response.data.main.humidity;
   let humidity = document.querySelector("#humidity");
   humidity.innerHTML = hum;
@@ -48,7 +49,40 @@ function showTemperature(response) {
   let realF = Math.round(response.data.main.feels_like);
   let real = document.querySelector("#real");
   real.innerHTML = realF;
+  let icon = document.querySelector("#icon");
+  icon.setAttribute("src",` https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+let min = document.querySelector("#min");
+let max = document.querySelector("#max");
+min.innerHTML= Math.round(response.data.main.temp_min);
+max.innerHTML= Math.round(response.data.main.temp_max);
+let description = document.querySelector("#description");
+description.innerHTML = response.data.weather[0].description
 }
+
+function showFarnightTemperature (event){
+    event.preventDefault();
+    celciusTemp.classList.remove("active");
+    farnight.classList.add("active")
+    let farnightTemperature = Math.round((celcius*9)/5 +32) ;
+    let temperatureElement = document.querySelector("#temperature-now");
+    temperatureElement.innerHTML = farnightTemperature
+
+}
+
+
+function showcelciusTemperature(event){
+    event.preventDefault();
+    celciusTemp.classList.add("active");
+    farnight.classList.remove("active")
+    let temperatureElement = document.querySelector("#temperature-now");
+    temperatureElement.innerHTML = Math.round(celcius) 
+}
+let farnight = document.querySelector("#Frarnight");
+farnight.addEventListener("click",showFarnightTemperature);
+let celciusTemp = document.querySelector("#celciul-temperature");
+celciusTemp.addEventListener("click",showcelciusTemperature);
+let celcius = null;
+
 ///Bonus
 
 function geoTemperature(response) {
