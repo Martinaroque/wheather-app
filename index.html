@@ -23,12 +23,13 @@
 </head>
 
 <body class="geral">
+    <div class="container">
     <h1>
-        Whitch city are you?
+        
     </h1>
     <br />
     <form id="search-form">
-        <input type="text" placeholder="Text one city" autocomplete="off" autofocus="on" id="search-text" />
+        <input type="text" placeholder="Text a city" autocomplete="off" autofocus="on" id="search-text" />
         <input type="submit" value="search" class="btn btn-primary" />
 
 
@@ -42,33 +43,34 @@
     <div class="info">
         <small> Today: <b><span class="date"></span></b> <b><span class="time"></span></b></small>
     </div>
-    </div>
+    
     <br />
     <UL>
 
         <li>Humidity: <span id="humidity">20</span>%</li>
         <li>Real Fee: <span id="real">9</span>ºC</li>
+        <li id="description"></li> 
     </UL>
     <br />
     <div class="main">
-        <img class="today-chuva" src="imagens/chuva.PNG" alt="">
+        <img class="today-chuva" src="" alt="" id="icon">
         <div class="today">
             <h5>
                 Lisbon
             </h5>
             <p>
 
-                <span class="nowTemperature" id="temperature-now">31</span><span>º</span>
+                <span class="nowTemperature" id="temperature-now">31</span>
                 <span id="all-temperature">
-                    <span>C</span>
+                    <span><a href="" id="celciul-temperature" class="active">ºC</a></span><span>|</span><span ><a href="" id="Frarnight" >ºF</span></a>
 
 
 
                 </span>
             </p>
-
-            <p class="min">Min:10ºC</p>
-            <p>Max:16ºC</p>
+            <span>Max:</span><span id="max"></span><span>ºC</span>
+           <span>Min:</span><span id="min"></span><span>ºC</span>
+           
         </div>
     </div>
     <div class="choose-day">
@@ -78,7 +80,7 @@
     </div>
     <br />
 
-    <div class="container">
+ 
         <div class="row">
             <div class="col">
                 <div class="card" width=30>
@@ -146,7 +148,8 @@
                 </div>
             </div>
         </div>
-    </div>
+        
+</div>
     <small class="code">
         <a href="https://github.com/Martinaroque/wheather-app" target="_blank">Open-source code</a>, by Martina Roque
     </small>
