@@ -1,90 +1,107 @@
 .info {
-  position: relative;
-  text-align: end;
-  font-family: "Red Hat Mono", monospace;
-}
-.choose-day {
-  text-align: center;
-  border-radius: 20px;
-  /* margin-top: -190px; */
-}
-ul {
-  list-style: none;
-  position: relative;
-  text-align: end;
-  font-family: "Red Hat Mono", monospace;
-}
-.today-chuva {
-  width: 200px;
-  display: block;
-  margin: 0 auto;
-}
-.today {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-family: "Red Hat Mono", monospace;
-}
-.min {
-  margin-bottom: 0;
-}
-.card-img-top {
-  width: 150px;
-  display: block;
-  margin: 0 auto;
-}
+    position: relative;
+    text-align: end;
+    font-family: "Red Hat Mono", monospace;
+  }
+  .choose-day {
+    text-align: center;
+    border-radius: 20px;
+    /* margin-top: -190px; */
+  }
+  ul {
+    list-style: none;
+    position: relative;
+    text-align: end;
+    font-family: "Red Hat Mono", monospace;
+    
+  }
+  .today-chuva {
+    width: 90px;
+    display: block;
+    margin: 0 auto;
+  }
+  .today {
+    text-align: center;
+    font-family: "Poppins", sans-serif;
+    font-family: "Red Hat Mono", monospace;
+  }
+  .min {
+    margin-bottom: 0;
+  }
+  .card-img-top {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .card-title {
+    text-align: center;
+  }
+  .temperature {
+    text-align: center;
+  }
+  .btn-primary {
+    text-align: center;
+  }
+  .main {
+    position: relative;
+    /* top: -200px; */
+  }
+  h1 {
+    padding: 10px;
+    font-family: "Red Hat Mono", monospace;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+  
+  .container {
+    background: radial-gradient(
+      circle at 18.7% 37.8%,
+      rgb(250, 250, 250) 0%,
+      rgb(225, 234, 238) 90%
+    );
+    padding: 15px;
+    margin: 2px auto;
+    max-width: 1000px;
+    border: 1px solid grey;
+    padding-top: 7px;
+  }
+  .card {
+    padding: 3px;
+    margin: 2px auto;
+  }
+  #location {
+    color: white;
+    background: green;
+    padding: 5px 10px;
+    margin: 0 auto;
+    border: 1px solid green;
+    border-radius: 4px;
+    transition: all 200ms ease-in-out;
+  }
+  #location:hover {
+    color: green;
+    background: white;
+    cursor: pointer;
+  }
+  .code {
+    line-height: 1.5;
+    color: #212529;
+    margin: 2px auto;
+    max-width: 1000px;
+  }
+ #all-temperature .active{
 
-.card-title {
-  text-align: center;
-}
-.temperature {
-  text-align: center;
-}
-.btn-primary {
-  text-align: center;
-}
-.main {
-  position: relative;
-  /* top: -200px; */
-}
-h1 {
-  padding: 10px;
-  font-family: "Red Hat Mono", monospace;
-  margin: 0 auto;
-  font-size: 20px;
-}
+    color:black;
+    cursor: default;
+ }
+ #all-temperature .active:hover{
+    text-decoration: none;
+ }
+ #celciul-temperature{
+    text-decoration: none;
+ }
+ #Frarnight{
 
-.geral {
-  background: radial-gradient(
-    circle at 18.7% 37.8%,
-    rgb(250, 250, 250) 0%,
-    rgb(225, 234, 238) 90%
-  );
-  padding: 15px;
-  margin: 2px auto;
-  max-width: 1000px;
-  border: 1px solid grey;
-  padding-top: 7px;
-}
-.card {
-  padding: 3px;
-  margin: 2px auto;
-}
-#location {
-  color: white;
-  background: green;
-  padding: 5px 10px;
-  margin: 0 auto;
-  border: 1px solid green;
-  border-radius: 4px;
-  transition: all 200ms ease-in-out;
-}
-#location:hover {
-  color: green;
-  background: white;
-  cursor: pointer;
-}
-.code {
-  line-height: 1.5;
-  color: #212529;
-  text-align: left;
-}
+    text-decoration: none;
+ }
