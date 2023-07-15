@@ -81,10 +81,7 @@
     cursor: pointer;
   }
   .code {
-    line-height: 1.5;
-    color: #212529;
-    margin: 2px auto;
-    max-width: 1000px;
+      text-align: center;
   }
  #all-temperature .active{
 
